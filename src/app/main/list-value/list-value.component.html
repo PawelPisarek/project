@@ -1,0 +1,12 @@
+<div *ngFor="let row of list; let i = index">
+  <span>{{
+    row.price * (+row.value)| currency:'PLN'
+    }} </span>
+  <span> Kurs euro={{
+    row.price| currency:'EUR'
+    }} </span>
+  <span>wartość dla {{
+    row.value
+    }} </span>
+  <span>{{ row.data | date:'medium' }}</span>
+</div>
