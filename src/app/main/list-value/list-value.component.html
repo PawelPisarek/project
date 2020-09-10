@@ -1,6 +1,6 @@
 <div *ngFor="let row of list; let i = index">
   <span>{{
-    row.price * (+row.value)| currency:'PLN'
+    row.price * (+row.value) | number:'1.0-3'| currency:'PLN'
     }} </span>
   <span> Kurs euro={{
     row.price| currency:'EUR'
