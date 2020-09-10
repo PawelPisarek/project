@@ -17,6 +17,6 @@ export class AppComponent {
   }));
 
   saveConversion($event: ValuePriceDataModel) {
-    this.list$.next([...this.list$.getValue(), $event]);
+    this.list$.next([$event, ...this.list$.getValue()]);
   }
 }
