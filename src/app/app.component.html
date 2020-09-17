@@ -1,4 +1,5 @@
-<router-outlet></router-outlet>
-<app-value-form [valuePrice]="priceValue$|async" (addConversion)="saveConversion($event)"></app-value-form>
-wynik
-<app-list-value [list]="list$|async"></app-list-value>
+<div class="container">
+  <h2>Przelicz kurs EURO na PLN</h2>
+  <app-value-form [valuePrice]="priceValue$|async" (addConversion)="saveConversion($event)"></app-value-form>
+  <app-list-value [list]="list$|async"></app-list-value>
+</div>

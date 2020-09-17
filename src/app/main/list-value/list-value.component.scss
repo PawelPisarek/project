@@ -1,0 +1,17 @@
+.row {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  margin: 5px;
+  &--column {
+    flex: 50%;
+  }
+  &--value {
+    font-size: xx-large;
+    padding: 20px;
+    height: 30px;
+  }
+}
+.title{
+  padding-left: 10px;
+}

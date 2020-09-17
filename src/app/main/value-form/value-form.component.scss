@@ -1,0 +1,26 @@
+@mixin radius-left-right($v1, $v2, $v3, $v4) {
+  border: 2px solid purple;
+  border-radius: $v1 $v2 $v3 $v4;
+  font-size: xx-large;
+}
+
+.form {
+  display: flex;
+  &--column {
+    flex: 50%;
+  }
+  &--input {
+    @include radius-left-right(15px, 0px, 0px, 15px);
+    height: 30px;
+    background-color: rgb(253, 239, 209);
+    padding: 20px;
+  }
+  &--button {
+    @include radius-left-right(0px, 15px, 15px, 0px);
+    background-color: purple;
+    color: white;
+  }
+}
+.title{
+  padding-left: 10px;
+}
