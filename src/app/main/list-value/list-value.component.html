@@ -1,6 +1,6 @@
 <p class="title">WYNIK</p>
 <div *ngFor="let row of list; let i = index">
-  <div class="row">
+  <div class="row" [ngClass]="{'row--new': show&&i==0}">
     <div class="row--column row--value">
       <span
         >{{
@@ -15,4 +15,8 @@
       <p>WARTOŚĆ DLA {{ row.value | currency: "EUR":"EUR" }} </p>
     </div>
   </div>
+</div>
+<div id='banner'>
+  <img src="assets/blue_skye.PNG" alt="">
+  <h2>napis</h2>
 </div>
